@@ -18,9 +18,9 @@ export default function Header() {
             </div>
             <div>
                 <ul className='flex space-x-10'>
-                    <li className={`py-3 text-sm font-semibold text-gray-400 border-b-[3px] border-b-transparent cursor-pointer  ${pathMatchRoute('/') && "text-black border-b-red-500"}`} onClick={() => navigate("/")}>Home</li>
-                    <li className={`py-3 text-sm font-semibold text-gray-400 border-b-[3px] border-b-transparent cursor-pointer ${pathMatchRoute("/offers") && "text-black border-b-red-500"}`} onClick={() => navigate("/offers")}>Offers</li>
-                    <li className={`py-3 text-sm font-semibold text-gray-400 border-b-[3px] cursor-pointer ${pathMatchRoute("/signin") && "text-black border-b-red-500 transition ease-in-out"}`} onClick={() => navigate("/signin")}>Sign In</li>
+                    <li className={`py-3 text-sm font-semibold text-gray-400 cursor-pointer  ${pathMatchRoute('/') && "text-black border-b-[4px] border-b-red-500"}`} onClick={() => navigate("/")}>Home</li>
+                    <li className={`py-3 text-sm font-semibold text-gray-400 cursor-pointer ${pathMatchRoute("/offers") && "text-black border-b-[4px] border-b-red-500"}`} onClick={() => navigate("/offers")}>Offers</li>
+                    <li className={`py-3 text-sm font-semibold text-gray-400 cursor-pointer ${pathMatchRoute("/signin") && "text-black border-b-[4px] border-b-red-500 transition ease-in-out"}`} onClick={() => navigate("/signin")}>Sign In</li>
                 </ul>
             </div>
         </header>
